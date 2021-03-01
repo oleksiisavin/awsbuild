@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - ./create_deployment_package.sh
+artifacts:
+  files:
+    - '**/*'
+  name: myname-$AWS_REGION 
