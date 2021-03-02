@@ -2,8 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - uname -a
-      - apt install python3-pip      
+      - uname -a   
   build:
     commands:
       - ./create_deployment_package.sh
