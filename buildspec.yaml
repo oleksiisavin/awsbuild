@@ -2,7 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - python -m pip install -U pip
+      - uname -a
       - apt install python3-pip      
   build:
     commands:
