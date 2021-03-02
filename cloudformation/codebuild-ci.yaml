@@ -262,6 +262,16 @@ Resources:
           Ref: RepositoryUrl
         Type: GITHUB
       TimeoutInMinutes: '30'
+      SourceVersion: main   # Branch name
+      Triggers:
+        Webhook: true
+        FilterGroups:
+          - - Type: EVENT
+              Pattern: PUSH
+              ExcludeMatchedPattern: false
+            - Type: HEAD_REF
+              Pattern: refs/heads/main # 'master' is Branch name
+              ExcludeMatchedPattern: false
   CodeBuildStatus:
     Type: AWS::Events::Rule
     Properties:
