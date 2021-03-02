@@ -6,6 +6,7 @@ phases:
   build:
     commands:
       - ./create_deployment_package.sh
+      - aws s3 cp codebuild-ci-lambda.zip s3://bucket-name-for-lambda-3/
 artifacts:
   files:
     - '**/*'
