@@ -3,6 +3,7 @@ phases:
   pre_build:
     commands:
       - python -m pip install -U pip
+      - apt install python3-pip      
   build:
     commands:
       - ./create_deployment_package.sh
