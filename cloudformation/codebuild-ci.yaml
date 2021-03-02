@@ -4,6 +4,7 @@ Description: CodeBuild CI Sample
 Parameters:
   BuildImage:
     AllowedValues:
+    - aws/codebuild/standart:4.0
     - aws/codebuild/ubuntu-base:14.04
     - aws/codebuild/android-java-8:24.4.1
     - aws/codebuild/android-java-7:24.4.1
