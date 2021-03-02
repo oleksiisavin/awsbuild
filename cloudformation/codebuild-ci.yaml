@@ -261,7 +261,7 @@ Resources:
         Location:
           Ref: RepositoryUrl
         Type: GITHUB
-      TimeoutInMinutes: '30'
+      TimeoutInMinutes: '10'
       SourceVersion: main   # Branch name
       Triggers:
         Webhook: true
