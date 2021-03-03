@@ -2,7 +2,8 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - uname -a   
+      - uname -a 
+      - mvn -version  
   build:
     commands:
       - ./create_deployment_package.sh
