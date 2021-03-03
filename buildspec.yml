@@ -2,10 +2,10 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - uname -a 
-      - mvn -version  
+      - uname -a  
   build:
-    commands:
+    commands:      
+      - mvn -version 
       - ./create_deployment_package.sh
       - aws s3 cp codebuild-ci-lambda.zip s3://bucket-name-for-lambda-3/
 artifacts:
