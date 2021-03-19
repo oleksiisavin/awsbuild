@@ -11,8 +11,8 @@ node () {
  			// Shell build step
 sh """ 
 mvn -version 
-#./create_deployment_package.sh
-/opt/aws-codebuild-docker-images/local_builds/codebuild_build.sh -a artifact -i aws/codebuild/standard:3.0 -c -b buildspec.yml 
+./create_deployment_package.sh
+#/opt/aws-codebuild-docker-images/local_builds/codebuild_build.sh -a artifact -i aws/codebuild/standard:3.0 -c -b buildspec.yml 
  """ 
 	}
 }
