@@ -15,5 +15,10 @@ mvn -version
 /opt/aws-codebuild-docker-images/local_builds/codebuild_build.sh -a artifact -i aws/codebuild/standard:3.0 -c -b buildspec.yml 
  """ 
 	}
+		stage('Test') {
+            steps {
+                sh './gradlew check'
+            }
+        }
 }
 }
