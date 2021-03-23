@@ -1,6 +1,5 @@
 github3.py>=1.0.0
 boto3
-tea>=1.9.3
 #test
 appnope==0.1.0
 backcall==0.1.0
